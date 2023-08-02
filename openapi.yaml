@@ -25,12 +25,6 @@ paths:
               application/json:
                 schema:
                   $ref: "#/components/schemas/operation_response"
-          '201':
-            description: Объект создан
-            content:
-              application/json:
-                schema:
-                  $ref: "#/components/schemas/operation_response"
           'default':
             description: Ошибка
             content:
@@ -111,14 +105,6 @@ paths:
               application/json:
                 schema:
                   $ref: "#/components/schemas/operation_response"
-          '201':
-            description: Объект создан
-            content:
-              application/json:
-                schema:
-                  $ref: "#/components/schemas/operation_response"
-          '204':
-            description: Объект не найден
           'default':
             description: Ошибка
             content:
@@ -141,12 +127,6 @@ paths:
             example: 1
       responses:
         '200':
-          description: Успешный ответ о удалении с содержимым, которое было удалено
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/operation_response"
-        '204':
           description: Успешный ответ о удалении с содержимым, которое было удалено
           content:
             application/json:
